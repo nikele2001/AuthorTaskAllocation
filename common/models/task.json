@@ -1,0 +1,42 @@
+{
+    "name": "Task",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "dataSource": "${DB_IN_USE}",
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "id": {
+            "type": "number",
+            "id": true,
+            "generated": true
+        },
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "dueDate": {
+            "type": "date"
+        },
+        "authorId": {
+            "type": "number"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "author": {
+            "type": "belongsTo",
+            "model": "Author",
+            "foreignKey": "authorId"
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

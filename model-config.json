@@ -1,0 +1,49 @@
+{
+    "_meta": {
+        "sources": [
+            "loopback/common/models",
+            "loopback/server/models",
+            "../common/models",
+            "./models"
+        ],
+        "mixins": [
+            "loopback/common/mixins",
+            "loopback/server/mixins",
+            "../common/mixins",
+            "./mixins"
+        ]
+    },
+    "User": {
+        "dataSource": "localDb"
+    },
+    "AccessToken": {
+        "dataSource": "localDb",
+        "public": false
+    },
+    "ACL": {
+        "dataSource": "localDb",
+        "public": false
+    },
+    "RoleMapping": {
+        "dataSource": "localDb",
+        "public": false,
+        "options": {
+            "strictObjectIDCoercion": true
+        }
+    },
+    "Role": {
+        "dataSource": "localDb",
+        "public": false
+    },
+    "Message": {
+        "dataSource": null
+    },
+    "Author": {
+        "dataSource": "localDb",
+        "public": true
+    },
+    "Task": {
+        "dataSource": "localDb",
+        "public": true
+    }
+}

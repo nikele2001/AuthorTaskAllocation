@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "remoteDb"
+  },
+  "AccessToken": {
+    "dataSource": "remoteDb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "remoteDb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "remoteDb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "remoteDb",
+    "public": false
+  },
+  "Author": {
+    "dataSource": "remoteDb",
+    "public": true
+  },
+  "Task": {
+    "dataSource": "remoteDb",
+    "public": true
+  }
+}
