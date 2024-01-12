@@ -1,0 +1,3 @@
+[submodule "AuthorTaskAllocationClient"]
+	path = AuthorTaskAllocationClient
+	url = https://github.com/nikele2001/AuthorTaskAllocationClient
