@@ -1,36 +1,38 @@
 {
-    "name": "author-task-allocation",
-    "version": "1.0.0",
-    "main": "server/server.js",
-    "engines": {
-        "node": ">=6"
-    },
-    "scripts": {
-        "lint": "eslint .",
-        "start:backend": "node server/create-lb-tables.js && node .",
-        "start:frontend": "cd client && npm start",
-        "posttest": "npm run lint"
-    },
-    "dependencies": {
-        "compression": "^1.0.3",
-        "cors": "^2.8.5",
-        "dotenv": "^16.3.1",
-        "helmet": "^3.10.0",
-        "loopback": "^3.22.0",
-        "loopback-boot": "^2.6.5",
-        "loopback-component-explorer": "^6.2.0",
-        "loopback-connector-postgresql": "^7.0.2",
-        "serve-favicon": "^2.0.1",
-        "strong-error-handler": "^4.0.0"
-    },
-    "devDependencies": {
-        "eslint": "^3.17.1",
-        "eslint-config-loopback": "^8.0.0"
-    },
-    "repository": {
-        "type": "",
-        "url": ""
-    },
-    "license": "UNLICENSED",
-    "description": "AuthorTaskAllocation"
+  "name": "author-task-allocation",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start:backend": "node server/create-lb-tables.js && node .",
+    "start:frontend": "cd AuthorTaskAllocationClient && npm start",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ember-toastr": "^3.0.1",
+    "helmet": "^3.10.0",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-postgresql": "^7.0.2",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^4.0.0",
+    "toastr": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "AuthorTaskAllocation"
 }
