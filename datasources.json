@@ -1,25 +1,25 @@
 {
-    "localDb": {
-        "name": "localDb",
-        "connector": "postgresql",
-        "url": "",
-        "host": "${DB_HOST}",
-        "port": "${DB_PORT}",
-        "user": "${DB_USER}",
-        "password": "${DB_PASSWORD}",
-        "database": "${DB_NAME}",
-        "autoupdate": true
-    },
+  "localDb": {
+    "name": "localDb",
+    "connector": "postgresql",
+    "url": "",
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}",
+    "user": "${DB_USER}",
+    "password": "${DB_PASSWORD}",
+    "database": "${DB_NAME}",
+    "autoupdate": true
+  },
 
-    "remoteDb": {
-        "name": "remoteDb",
-        "connector": "postgresql",
-        "url": "${REMOTE_DB_URL}",
-        "host": "${REMOTE_DB_HOST}",
-        "port": "${REMOTE_DB_PORT}",
-        "user": "${REMOTE_DB_USER}",
-        "password": "${REMOTE_DB_PASSWORD}",
-        "database": "${REMOTE_DB_NAME}",
-        "autoupdate": true
-    }
+  "remoteDb": {
+    "name": "remoteDb",
+    "connector": "postgresql",
+    "url": "${REMOTE_DB_URL}",
+    "host": "${REMOTE_DB_HOST}",
+    "port": "${REMOTE_DB_PORT}",
+    "user": "${REMOTE_DB_USER}",
+    "password": "${REMOTE_DB_PASSWORD}",
+    "database": "${REMOTE_DB_NAME}",
+    "autoupdate": true
+  }
 }

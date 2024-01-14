@@ -1,51 +1,51 @@
 {
-    "name": "Author",
-    "base": "PersistedModel",
-    "dataSource": "${DB_IN_USE}",
-    "idInjection": true,
-    "options": {
-        "validateUpsert": true
+  "name": "Author",
+  "base": "PersistedModel",
+  "dataSource": "${DB_IN_USE}",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "generated": true
     },
-    "properties": {
-        "id": {
-            "type": "number",
-            "id": true,
-            "generated": true
-        },
-        "name": {
-            "type": "string",
-            "required": true
-        }
-    },
-    "validations": [],
-    "relations": {
-        "tasks": {
-            "type": "hasMany",
-            "model": "Task",
-            "foreignKey": "authorId"
-        }
-    },
-    "acls": [],
-    "methods": {
-        "createAuthor": {
-            "accepts": [
-                {
-                    "arg": "name",
-                    "type": "object",
-                    "required": true,
-                    "http": {
-                        "source": "body"
-                    }
-                }
-            ],
-            "returns": {
-                "arg": "author",
-                "type": "object"
-            },
-            "http": {
-                "path": "/createAuthor",
-                "verb": "post"
-            }
-        }
+    "name": {
+      "type": "string",
+      "required": true
     }
+  },
+  "validations": [],
+  "relations": {
+    "tasks": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": "authorId"
+    }
+  },
+  "acls": [],
+  "methods": {
+    "createAuthor": {
+      "accepts": [
+        {
+          "arg": "name",
+          "type": "object",
+          "required": true,
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "author",
+        "type": "object"
+      },
+      "http": {
+        "path": "/createAuthor",
+        "verb": "post"
+      }
+    }
+  }
 }
